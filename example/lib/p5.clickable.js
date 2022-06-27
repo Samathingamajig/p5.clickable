@@ -17,8 +17,8 @@ p5.prototype.runGUI = function () {
 		}
 	}
 	if (cl_lastHovered != null) {
+		cursor(cl_lastHovered.hoverCursorStyle);
 		if (cl_lastClicked != cl_lastHovered) {
-			cursor(cl_lastHovered.hoverCursorStyle);
 			cl_lastHovered.onHover();
 		}
 	}
